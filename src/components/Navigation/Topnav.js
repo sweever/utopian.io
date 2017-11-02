@@ -17,6 +17,10 @@ import PopoverMenu, { PopoverMenuItem } from '../PopoverMenu/PopoverMenu';
 import CategoryIcon from '../CategoriesIcons';
 import './Topnav.less';
 
+
+// @UTOPIAN
+import { authCodeFlow } from '../../helpers/authCodeFlow';
+
 const InputGroup = Input.Group;
 const Option = Select.Option;
 
@@ -206,7 +210,7 @@ class Topnav extends React.Component {
               |
             </Menu.Item>
             <Menu.Item key="login">
-              <a href={steemconnect.getLoginURL(next)}>
+              <a href={authCodeFlow(next)}>
                 <FormattedMessage id="login" defaultMessage="Log in"/>
               </a>
             </Menu.Item>

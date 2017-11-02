@@ -13,7 +13,7 @@ const GithubBtn = ({ disconnect }) => (
       }
     }}
   >
-    <Icon type="github" /> {!disconnect ? 'Synch with Github' : 'Disconnect Github' }
+    <Icon type="github" /> {!disconnect ? 'Sync with Github' : 'Disconnect Github' }
   </button>
 );
 
